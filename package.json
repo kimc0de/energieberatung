@@ -1,0 +1,29 @@
+{
+  "name": "energieberatung",
+  "version": "1.0.0",
+  "description": "Energy Consulting - Karsten Diekmann",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kimc0de/energieberatung.git"
+  },
+  "author": "Kim Ngan Le Dang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimc0de/energieberatung/issues"
+  },
+  "homepage": "https://github.com/kimc0de/energieberatung#readme",
+  "dependencies": {
+    "ejs": "3.1.9",
+    "express": "4.18.2",
+    "express-ejs-layouts": "2.5.1",
+    "nodemon": "3.0.1",
+    "path": "0.12.7",
+    "url": "0.11.1"
+  }
+}
