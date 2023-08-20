@@ -34,15 +34,15 @@
 }
 
 #homepage .contact-btn {
+    padding: 0.5rem 1rem;
     margin-top: 2rem;
 
     @media (min-width: 1200px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 4rem;
     }
 
     @media (min-width: 1400px) {
-        font-size: 1.5rem;
         margin-top: 5rem;
     }
 }
@@ -159,4 +159,43 @@
     @media (min-width: 576px) {
         max-height: 100px;
     }
+}
+
+#homepage .carousel-caption {
+    border-radius: 1rem;
+    background-color: rgba(228, 244, 217, 0.9);
+}
+
+#homepage .carousel-item img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 200px;
+
+    @media (min-width: 576px) {
+        max-height: 300px;
+    }
+
+    @media (min-width: 1024px) {
+        max-height: 400px;
+    }
+
+    @media (min-width: 1400px) {
+        max-height: 600px;
+    }
+}
+
+#homepage .carousel-caption {
+    bottom: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (min-width: 768px) {
+        top: auto;
+        bottom: 15%;
+        transform: none;
+    }
+}
+
+#homepage .carousel-inner {
+    margin-left: 2px; // even white space on the right side of the carousel
 }
