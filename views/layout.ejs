@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon.ico">
 
     <%# Bootstrap style sheet %>
-    <link href="/styles/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
 
     <%# Font %>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,15 +20,18 @@
     <%# Font Awesome / Icons %>
 
     <%# custom style sheets - link here to overwrite bootstrap %>
-    <link href="/styles/index.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/header.css" rel="stylesheet" type="text/css" />
+    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="/css/home.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+    <a id="skip-link" class="btn btn-outline-primary" href="#main">Direkt zum Hauptinhalt</a>
+
     <!-- Content -->
     <div class="root">
         <%- include('./partials/header.ejs') %>
-        <main><%- body %></main>
+        <main id="main"><%- body %></main>
         <%- include('./partials/footer.ejs') %>
     </div>
 
