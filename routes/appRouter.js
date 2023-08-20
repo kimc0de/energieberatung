@@ -3,7 +3,6 @@ import express from 'express';
 const router = express.Router();
 const DEFAULT_TITLE = 'Energieberatung, Energieausweis, iSFP | EEE. Karsten Diekmann';
 
-//route to index page
 router.get('/', (req, res) => {
     res.render('home', {
         title: DEFAULT_TITLE,
@@ -55,12 +54,6 @@ router.get('/dienstleistungen/isfp', (req, res) => {
 router.get('/danke', (req, res) => {
     res.render('thanks', {
         title: DEFAULT_TITLE,
-    });
-});
-
-router.get('/error', (req, res) => {
-    res.render('error', {
-        title: 'Error | EEE. Karsten Diekmann',
     });
 });
 

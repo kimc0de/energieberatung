@@ -1,9 +1,11 @@
 import express from 'express';
 import expressLayouts from 'express-ejs-layouts';
 import { fileURLToPath } from 'url';
-import router from './routes/index.js';
+import router from './routes/appRouter.js';
+import errorRouter from './routes/errorRouter.js';
 import path from 'path';
 const app = express();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -22,7 +24,8 @@ if (port == null || port === ""){
     port = 3000;
 }
 
-app.use(router);
+app.use('/', router);
+app.use('/', errorRouter);
 
 app.listen(port, () => {
     console.log(`Server running on port: http://localhost:${port}`);
