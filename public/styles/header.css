@@ -1,0 +1,36 @@
+#header {
+    background-color: var(--green-400);
+    padding: 1rem;
+    font-size: 1.5rem;
+
+    @media (min-width: 992px) {
+        padding: 1rem 2rem;
+    }
+}
+
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+.nav-link {
+    color: var(--green-100);
+    border-radius: 0.2rem;
+    text-align: center;
+}
+
+.navbar-nav .show > .nav-link, .navbar-nav .nav-link.active,
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--green-500);
+    font-weight: 500;
+    background-color: var(--green-200);
+}
+
+.nav-link:hover, .nav-link:focus,
+.dropdown-item:hover, .dropdown-item:focus {
+    color: var(--green-100);
+    background-color: var(--green-300);
+}
+
+.navbar-toggler {
+    border-color: var(--green-100);
+}
