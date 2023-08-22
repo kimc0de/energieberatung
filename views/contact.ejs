@@ -21,7 +21,7 @@
 
     <div class="contact-form">
         <h2 id="contact-form-title">Kontaktformular</h2>
-        <form aria-labelledby="contact-form-title" action="https://formsubmit.co/theprettykim@gmail.com" method="POST" class="row g-3 needs-validation" novalidate>
+        <form aria-labelledby="contact-form-title" action="https://formsubmit.co/eee.diekmann@icloud.com" method="POST" class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
                 <label for="name" class="form-label fw-bold">Name <span class="asterisk">*</span></label>
                 <input type="text" name="name" class="form-control" id="name" required>
@@ -31,18 +31,18 @@
             </div>
             <div class="col-md-4">
                 <label for="email" class="form-label fw-bold">Email <span class="asterisk">*</span></label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" name="email" class="form-control" id="email" required>
                 <div class="invalid-feedback">
                     Bitte Ihre Email eingeben.
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="tel" class="form-label fw-bold">Telefonnummer</label>
-                <input type="tel" class="form-control" id="tel">
+                <input type="tel" name="telefon" class="form-control" id="tel">
             </div>
             <div class="col-12">
                 <label for="message" class="form-label fw-bold">Nachricht <span class="asterisk">*</span></label>
-                <textarea type="text" class="form-control" id="message" required></textarea>
+                <textarea type="text" class="form-control" id="message" name="Nachricht" required></textarea>
                 <div class="invalid-feedback">
                     Bitte eine Nachricht schreiben.
                 </div>
@@ -59,6 +59,10 @@
                     </div>
                 </div>
             </div>
+            <input type="hidden" name="_next" value="http://localhost:3000/danke" aria-hidden="true" tabindex="-1">
+            <input type="hidden" name="_subject" value="Neu kontakt!" aria-hidden="true" tabindex="-1">
+            <input type="hidden" name="_autoresponse" value="Vielen Dank für Ihre Nachricht!" aria-hidden="true" tabindex="-1">
+
             <div class="col-12 text-center">
                 <button class="send btn btn-primary" type="submit">Senden</button>
             </div>
