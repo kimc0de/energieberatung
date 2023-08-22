@@ -1,1 +1,67 @@
-<h1>Contact page</h1>
+<div id="contact" class="container">
+    <h1>Kontakt</h1>
+
+    <div class="row">
+        <div class="col-12 col-md-6 px-1 px-lg-5">
+            <h2 class="top">Kontakt</h2>
+            <ul class="list-unstyled">
+                <li>Email: <span class="px-3"><a href="mailto:eee.diekmann@icloud.com">eee.diekmann@icloud.com</a></span></li>
+                <li>Mobil: <span class="px-3"><a href="tel:+4917647045777">+49 176 470 45 777</a></span></li>
+            </ul>
+
+            <h2 class="top">Addresse</h2>
+            <p>Woldemarstraße 41a, <br>32756 Detmold<br></p>
+        </div>
+        <div class="col-12 col-md-6 px-1 px-lg-5">
+            <h2 class="top">Bürozeiten</h2>
+            <p>montags - freitags <br>10:00 - 17:00 Uhr telefonisch erreichbar<br></p>
+            <p><strong>Termine nach vorheriger Vereinbarung</strong></p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2 id="contact-form-title">Kontaktformular</h2>
+        <form aria-labelledby="contact-form-title" action="https://formsubmit.co/theprettykim@gmail.com" method="POST" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="name" class="form-label fw-bold">Name <span class="asterisk">*</span></label>
+                <input type="text" name="name" class="form-control" id="name" required>
+                <div class="invalid-feedback">
+                    Bitte Ihr Name eingeben.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="email" class="form-label fw-bold">Email <span class="asterisk">*</span></label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                    Bitte Ihre Email eingeben.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="tel" class="form-label fw-bold">Telefonnummer</label>
+                <input type="tel" class="form-control" id="tel">
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label fw-bold">Nachricht <span class="asterisk">*</span></label>
+                <textarea type="text" class="form-control" id="message" required></textarea>
+                <div class="invalid-feedback">
+                    Bitte eine Nachricht schreiben.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Ich habe die <span><a href="/datenschutz">Datenschutzerklärung</a></span> zur Kenntnis genommen und erkläre mich damit einverstanden.
+                    </label>
+                    <div class="invalid-feedback">
+                        Bitte bestätigen Sie die Datenschutzerklärung.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button class="send btn btn-primary" type="submit">Senden</button>
+            </div>
+        </form>
+    </div>
+</div>
