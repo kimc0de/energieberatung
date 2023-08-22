@@ -1,5 +1,5 @@
 :root {
-  --beige-100: #f6f6e9;
+  --beige-100: #fff9f3;
   --pink-100: #ffebeb;
   --green-100: #e4f4d9;
   --green-200: #ddf1cf;
@@ -22,13 +22,23 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   background-color: var(--beige-100);
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 main {
   z-index: var(--main-z-index);
   min-height: 100vh;
+}
+
+a {
+  color: var(--green-500);
 }
 
 h1 {
