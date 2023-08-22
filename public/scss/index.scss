@@ -1,0 +1,134 @@
+:root {
+    --beige-100: #f6f6e9;
+    --pink-100: #ffebeb;
+    --green-100: #e4f4d9;
+    --green-200: #ddf1cf;
+    --green-300: #4d6f2a;
+    --green-400: #414b3b;
+    --green-500: #2b3917;
+    --brown-100: #504530;
+    --brown-200: #272727;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+
+    --main-z-index: 1;
+    --header-z-index: 3;
+    --header-overlay-z-index: 4;
+    --skip-link-z-index: 5;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    background-color: var(--beige-100);
+}
+
+main {
+    z-index: var(--main-z-index);
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 1.3rem;
+
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 3.5em;
+    }
+}
+
+h3 {
+    font-size: 1.1rem;
+
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 2rem;
+    }
+}
+
+#skip-link {
+    padding: 0.5rem 0;
+    position: absolute;
+    z-index: var(--skip-link-z-index);
+    text-align: center;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 12rem;
+}
+
+#skip-link:focus {
+    top: 0;
+}
+
+.btn {
+    border-radius: 2rem !important;
+}
+
+.btn.btn-primary {
+    border-color: var(--green-400);
+    background-color: var(--green-400);
+    color: var(--green-100);
+}
+
+.btn.btn-primary:hover {
+    border-color: var(--green-500);
+    background-color: var(--green-500);
+    color: var(--green-100);
+}
+
+.btn.btn-secondary {
+    border-color: var(--green-200);
+    background-color: var(--green-200);
+    color: var(--green-500);
+}
+
+.btn.btn-secondary:hover {
+    border-color: var(--green-500);
+    background-color: var(--green-500);
+    color: var(--green-100);
+}
+
+.btn.btn-outline-primary {
+    border-color: var(--green-500);
+    background-color: var(--green-100);
+    color: var(--green-500);
+}
+
+.btn.btn-info {
+    border-color: transparent;
+    background-color: rgba(221, 241, 207, 0.2);
+    color: var(--green-100);
+}
+
+.btn.btn-info:hover {
+    border-color: transparent;
+    background-color: var(--green-500);
+    color: var(--green-100);
+}

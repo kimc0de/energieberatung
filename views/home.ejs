@@ -1,10 +1,110 @@
-<div>
-    <h1 class="text-center">
-        Homepage
-    </h1>
-    <p class="text-center mt-4">
-        <a href="/wallpapers">
-            example
-        </a>
-    </p>
+<div id="homepage">
+    <section class="position-relative">
+        <picture>
+            <source media="(min-width: 1024px)" srcset="/images/homepage/homepage_cover_large.svg">
+            <source media="(min-width: 768px)" srcset="/images/homepage/homepage_cover_medium.png">
+            <img class="cover-image" src="/images/homepage/homepage_cover_small.png" alt="Cover image">
+        </picture>
+        <div class="title position-absolute">
+            <h1>Energieberatung</h1>
+            <p>Gewissenhaft, Effizient, Nachhaltig</p>
+            <a class="contact-btn btn btn-secondary text-decoration-underline" role="button" href="/kontakt">Kontakt jetzt</a>
+        </div>
+    </section>
+
+    <section class="section mx-2">
+        <div class="flex row justify-content-between">
+            <img class="col text-logo" src="/images/homepage/fulltext_logo_without_background.svg" alt="Logo mit text Energieberatung Karsten Diekmann">
+
+            <div class="col d-inline-block align-self-center">
+                <h2 class="section-title text-center text-sm-start p-2">Wer bin ich?</h2>
+                <ul class="my-3">
+                    <li class="list-item">Energieberater Dipl. Ing. (FH) Karsten Diekmann</li>
+                    <li class="list-item">Gelisted bei der Deutschen Energie-Agentur (Dena) als</li>
+                    <li class="list-item">Unabhängige, freiberufliche Energieberatung für Eigentümer von Wohngebäuden</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section colored-section">
+        <div class="mx-2 my-2 p-2">
+            <h2 class="section-title text-center text-sm-start p-2">Wie kann ich Ihnen helfen?</h2>
+            <div class="flex flex-column flex-lg-row row align-content-center">
+                <div class="col card flex-row flex-lg-column">
+                    <img src="/images/homepage/beratung.svg" class="card-img-top" alt="Energieberatungstermin icon">
+                    <div class="card-body position-relative">
+                        <h3 class="text-start card-title">Energieberatung</h3>
+                        <p class="card-text">Initialberatung, Orientierungsberatung, Energieeffizienzberatung.</p>
+                        <a href="/dienstleistungen/energieberatung" class="btn btn-info more-info text-decoration-underline" role="button" aria-label="Mehr information über Energieberatung">Mehr information</a>
+                    </div>
+                </div>
+                <div class="col card flex-row flex-lg-column">
+                    <img src="/images/homepage/ausweis.svg" class="card-img-top" alt="Energieausweis icon">
+                    <div class="card-body position-relative">
+                        <h3 class="text-start card-title">Energieausweis</h3>
+                        <p class="card-text">Energieausweise, Verbrauchs- und Bedarfsausweise aufstellen.</p>
+                        <a href="/dienstleistungen/energieausweis" class="btn btn-info more-info text-decoration-underline" role="button" aria-label="Mehr information über Energieausweis">Mehr information</a>
+                    </div>
+                </div>
+                <div class="col card flex-row flex-lg-column">
+                    <img src="/images/homepage/isfp.svg" class="card-img-top" alt="Individuelles Haus icon">
+                    <div class="card-body position-relative">
+                        <h3 class="text-start card-title">iSFP</h3>
+                        <p class="card-text">Leitfaden um Ihr Gebäude auf ein besseres Effizienzniveau zu heben </p>
+                        <a href="/dienstleistungen/isfp" class="btn btn-info more-info text-decoration-underline" role="button" aria-label="Mehr information über individueller Sanierungsfahrplan">Mehr information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="carousel" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="/images/homepage/carousel_1.svg" class="d-block" alt="gruene zukunft" aria-hidden="true">
+                <div class="carousel-caption">
+                    <h4>Energieeffizienz - Ihr Beitrag für eine Grüne Zukunft</h4>
+                    <p class="d-none d-md-block">Unsere Energieoptimierungsstrategien reduzieren nicht nur den Verbrauch, sondern mindern auch schädliches CO2. Durch gezielte Energieeinsparung gestalten Sie aktiv Klima- und Umweltschutz mit..</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="/images/homepage/carousel_2.svg" class="d-block" alt="kosteneinsparungen" aria-hidden="true">
+                <div class="carousel-caption">
+                    <h4>Energieeffizienz - Garantierte Kosteneinsparungen</h4>
+                    <p class="d-none d-md-block">Die Wahl der Energieeffizienz führt zu langfristigen Kosteneinsparungen. Durch gezielte Maßnahmen bleiben Ihre Energiekosten trotz steigender Preise stabil, während Sie Ihre finanzielle Unabhängigkeit bewahren..</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="/images/homepage/carousel_3.svg" class="d-block" alt="Mehrwert" aria-hidden="true">
+                <div class="carousel-caption">
+                    <h4>Energieeffizienz - Mehr als Einsparungen</h4>
+                    <p class="d-none d-md-block">Energieeffizienz bedeutet nicht nur finanzielle Einsparungen, sondern steigert auch den Wohnkomfort und den Immobilienwert. Erkunden Sie, wie gesteigerte Effizienz ästhetische Verbesserungen und langfristigen Mehrwert ermöglicht..</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" aria-hidden="true" tabindex="-1">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next" aria-hidden="true" tabindex="-1">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <section class="section">
+        <div class="row justify-content-center">
+            <img src="/images/homepage/energieeffizienzexperte.svg" class="sponsor col-12 col-md-4 py-2" alt="Energieeffizienzexperte Logo">
+            <img src="/images/homepage/dena.svg" class="sponsor col-12 col-md-4 py-2" alt="Energieeffizienzexperte Logo">
+            <img src="/images/homepage/bafa.svg" class="sponsor col-12 col-md-4 py-2" alt="Energieeffizienzexperte Logo">
+        </div>
+        <div class="row justify-content-center">
+            <img src="/images/homepage/gih.svg" class="sponsor col-12 col-md-6 py-2" alt="Energieeffizienzexperte Logo">
+            <img src="/images/homepage/kfw.svg" class="sponsor col-12 col-md-6 py-2" alt="Energieeffizienzexperte Logo">
+        </div>
+    </section>
 </div>
