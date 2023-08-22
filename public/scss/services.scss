@@ -1,0 +1,48 @@
+.service {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0 1.5rem;
+}
+
+.service h1 {
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+}
+
+.service h2 {
+  font-size: 1.1rem;
+  padding-top: 1rem;
+}
+
+.service .service-image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 200px;
+
+  @media (min-width: 768px) {
+    max-height: 300px;
+  }
+
+  @media (min-width: 1024px) {
+    max-height: 500px;
+  }
+}
+
+.service-cover-image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 180px;
+
+  @media (min-width: 768px) {
+    max-height: 270px;
+  }
+
+  @media (min-width: 1024px) {
+    max-height: 400px;
+  }
+}
+
+.service .service-image-isfp {
+  width: 100%;
+  max-height: 800px;
+}
