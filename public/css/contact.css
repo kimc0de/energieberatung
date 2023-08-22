@@ -1,0 +1,60 @@
+#contact {
+  font-size: 1.25rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0 1.5rem;
+}
+
+#contact h1 {
+  text-align: center;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  color: var(--brown-100);
+}
+
+#contact h2.top {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+#contact p, li {
+  padding-top: 0.5rem;
+}
+
+#contact .asterisk {
+  color: red;
+}
+
+#contact-form-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--brown-100);
+}
+
+#contact .contact-form {
+  background-color: var(--green-50);
+  border-radius: 3rem;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  #contact .contact-form {
+    padding: 2rem;
+  }
+}
+
+#contact input[type=text], #contact input[type=email], #contact input[type=tel] {
+  min-height: 3rem;
+}
+
+#contact .contact-form textarea {
+  min-height: 10rem;
+}
+
+#contact .send {
+  width: 10rem;
+  height: 3rem;
+}
+
+/*# sourceMappingURL=contact.css.map */
