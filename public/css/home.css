@@ -37,6 +37,22 @@
   }
 }
 
+#homepage .cover-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+@media (min-width: 1200px) {
+  #homepage .cover-image {
+    max-height: 450px;
+  }
+}
+@media (min-width: 1400px) {
+  #homepage .cover-image {
+    max-height: 650px;
+  }
+}
+
 #homepage .contact-btn {
   padding: 0.5rem 1rem;
   margin-top: 2rem;
@@ -54,11 +70,11 @@
 }
 
 #homepage .text-logo {
-  display: none;
+  display: inline-block;
+  max-height: 200px;
 }
 @media (min-width: 576px) {
   #homepage .text-logo {
-    display: inline-block;
     max-height: 200px;
   }
 }
@@ -190,16 +206,16 @@
 #homepage .carousel-item img {
   object-fit: cover;
   width: 100%;
-  max-height: 200px;
+  max-height: 300px;
 }
 @media (min-width: 576px) {
   #homepage .carousel-item img {
-    max-height: 300px;
+    max-height: 400px;
   }
 }
 @media (min-width: 1024px) {
   #homepage .carousel-item img {
-    max-height: 400px;
+    max-height: 500px;
   }
 }
 @media (min-width: 1400px) {
@@ -209,12 +225,15 @@
 }
 
 #homepage .carousel-caption {
+  display: flex;
+  align-items: center;
   bottom: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 @media (min-width: 768px) {
   #homepage .carousel-caption {
+    display: block;
     top: auto;
     bottom: 15%;
     transform: none;
