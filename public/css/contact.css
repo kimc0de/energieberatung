@@ -1,8 +1,13 @@
 #contact {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding: 0 1.5rem;
+}
+@media (min-width: 992px) {
+  #contact {
+    font-size: 1.25rem;
+  }
 }
 
 #contact h1 {
@@ -55,6 +60,12 @@
 #contact .send {
   width: 10rem;
   height: 3rem;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
 }
 
 /*# sourceMappingURL=contact.css.map */
