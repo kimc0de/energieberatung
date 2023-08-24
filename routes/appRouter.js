@@ -21,12 +21,6 @@ router.get('/kontakt', (req, res) => {
     });
 });
 
-router.get('/datenschutz', (req, res) => {
-    res.render('privacy', {
-        title: `Datenschutz | ${DEFAULT_TITLE}`,
-    });
-});
-
 router.get('/dienstleistungen/energieausweis', (req, res) => {
     res.render('energieausweis', {
         title: 'Energieausweis | EEE. Karsten Diekmann',
