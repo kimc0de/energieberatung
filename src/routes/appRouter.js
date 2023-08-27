@@ -65,8 +65,4 @@ router.get('/datenschutz', function(req, res){
     res.sendFile('Datenschutzerklaerung_Diekmann_Energieberatung.pdf', {root: './src/public/pdf'});
 });
 
-router.get('/favicon.ico', function(req, res) {
-    res.sendFile('favicon.ico', {root: './src/public/images'});
-});
-
 export default router;
