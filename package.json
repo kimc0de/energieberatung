@@ -2,11 +2,11 @@
   "name": "energieberatung",
   "version": "1.0.0",
   "description": "Energy Consulting - Karsten Diekmann",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "sass-watch": "sass --watch public/scss:public/css",
-    "nodemon-watch": "nodemon index.js",
+    "sass-watch": "sass --watch src/public/scss:public/css",
+    "nodemon-watch": "nodemon src/index.js",
     "start": "npm-run-all --parallel sass-watch nodemon-watch"
   },
   "repository": {

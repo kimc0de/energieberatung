@@ -12,12 +12,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
+console.log(__dirname);
 app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
-app.set('views', './views');
+app.set('views', './src/views');
 app.set('layout', './layout');
 
 //connect to the port
