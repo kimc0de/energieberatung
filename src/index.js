@@ -25,14 +25,6 @@ if (port == null || port === ""){
     port = 3000;
 }
 
-app.get('/datenschutz', function(request, response){
-    let tempFile=`${__dirname}/public/pdf/Datenschutzerklaerung_Diekmann_Energieberatung.pdf`;
-    fs.readFile(tempFile, function (err,data){
-        response.contentType("application/pdf");
-        response.send(data);
-    });
-});
-
 app.use('/', router);
 app.use('/', errorRouter);
 
