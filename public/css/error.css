@@ -1,0 +1,53 @@
+#error-page {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+#error-body {
+  background-color: var(--red-100);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+#error-top {
+  padding: 2rem 0;
+}
+
+#error-bottom {
+  padding-bottom: 2rem;
+}
+
+#error-bottom h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#error-bottom .page-not-found {
+  font-size: 1.5rem;
+}
+
+#error-page h2 {
+  font-size: 1.2rem;
+}
+
+#error-bottom .action-buttons {
+  margin-top: 3rem;
+}
+
+/* tablet size */
+@media (min-width: 768px) {
+  #error-bottom h1 {
+    font-size: 2rem;
+  }
+  #error-bottom p {
+    font-size: 1.5rem;
+  }
+  #error-page {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+}
+
+/*# sourceMappingURL=error.css.map */
