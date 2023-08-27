@@ -208,3 +208,11 @@
 #homepage .carousel-inner {
     margin-left: 1px; // even white space on the right side of the carousel
 }
+
+#homepage img.sponsor {
+    max-height: 70px;
+
+    @media (min-width: 768px) {
+        max-height: 100px;
+    }
+}

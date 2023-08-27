@@ -235,4 +235,13 @@
   margin-left: 1px;
 }
 
+#homepage img.sponsor {
+  max-height: 70px;
+}
+@media (min-width: 768px) {
+  #homepage img.sponsor {
+    max-height: 100px;
+  }
+}
+
 /*# sourceMappingURL=home.css.map */
