@@ -7,7 +7,8 @@
   "scripts": {
     "sass-watch": "sass --watch src/public/scss:public/css",
     "nodemon-watch": "nodemon src/index.js",
-    "start": "npm-run-all --parallel sass-watch nodemon-watch"
+    "start": "node src/index.js",
+    "dev": "npm-run-all --parallel sass-watch nodemon-watch"
   },
   "repository": {
     "type": "git",
