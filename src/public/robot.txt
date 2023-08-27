@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemaps: https://energie-beratung.online/sitemap.xml

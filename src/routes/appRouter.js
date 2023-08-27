@@ -51,4 +51,8 @@ router.get('/danke', (req, res) => {
     });
 });
 
+router.get ('/sitemap.xml', function(req, res) {
+    res.sendFile('sitemap.xml', {root: './public'});
+})
+
 export default router;
