@@ -189,10 +189,6 @@
   }
 }
 
-#homepage img.sponsor {
-  max-height: 100px;
-}
-
 #homepage .carousel-caption {
   border-radius: 1rem;
   background-color: rgba(228, 244, 217, 0.9);

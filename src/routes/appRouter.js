@@ -55,4 +55,10 @@ router.get ('/sitemap.xml', function(req, res) {
     res.sendFile('sitemap.xml', {root: './public'});
 })
 
+router.get('/quelleangaben', function(req, res){
+    res.render('source', {
+        title: 'Quellenangaben | EEE. Karsten Diekmann',
+    });
+});
+
 export default router;
