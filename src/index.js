@@ -12,7 +12,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-console.log(__dirname);
 app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', 'ejs');
