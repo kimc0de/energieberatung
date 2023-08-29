@@ -27,28 +27,28 @@ router.get('/kontakt', (req, res) => {
 
 router.get('/dienstleistungen/energieausweis', (req, res) => {
     res.render('energieausweis', {
-        title: 'Energieausweis | EEE. Karsten Diekmann',
+        title: 'Energieausweis | EEE. Karsten Diekmann | Energieberater aus Detmold',
         description: 'Im Rahmen des Individuellen Sanierungsfahrplans (iSFP) können Sie vom Energieausweis besonders profitieren. Sie unsere Energieausweis-Dienstleistungen und erhalten Sie wertvolle Einblicke in die Energieeffizienz Ihrer Immobilie.'
     });
 });
 
 router.get('/dienstleistungen/energieberatung', (req, res) => {
     res.render('energieberatung', {
-        title: 'Energieberatung | EEE. Karsten Diekmann',
+        title: 'Energieberatung | EEE. Karsten Diekmann | Energieberater aus Detmold',
         description: 'Professionelle Energieberatung in Detmold. Optimieren Sie Ihre Energieeffizienz und senken Sie Kosten. Erfahren Sie mehr über unsere maßgeschneiderten Lösungen und transparenten Energieberatung Kosten.'
     });
 });
 
 router.get('/impressum', (req, res) => {
     res.render('imprint', {
-        title: 'Impressum | EEE. Karsten Diekmann',
+        title: 'Impressum | EEE. Karsten Diekmann | Energieberater aus Detmold',
         description: DEFAULT_DESCRIPTION,
     });
 });
 
 router.get('/dienstleistungen/isfp', (req, res) => {
     res.render('isfp', {
-        title: 'iSFP | EEE. Karsten Diekmann',
+        title: 'iSFP | EEE. Karsten Diekmann | Energieberater aus Detmold',
         description: 'Individueller Sanierungsfahrplan (iSFP) für Detmold und Umgebung. Planen Sie gezielte Energiesanierung mit maßgeschneiderten Maßnahmen. Erfahren Sie mehr über unseren iSFP-Service und wie er Ihnen hilft, Ihre Immobilie effizient zu modernisieren.'
     });
 });
