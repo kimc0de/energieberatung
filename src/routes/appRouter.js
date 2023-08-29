@@ -1,7 +1,7 @@
 import express from 'express';
 
 const router = express.Router();
-const DEFAULT_TITLE = 'Energieberatung, Energieausweis, iSFP | EEE. Karsten Diekmann | Ihr Berater aus Detmold';
+const DEFAULT_TITLE = 'Energieberatung, Energieausweis, iSFP | Ihr Energieberater aus Detmold | EEE. Diekmann';
 const DEFAULT_DESCRIPTION = 'Verbessern Sie die Energieeffizienz Ihrer Immobilie mit den Experten-Services: Energieberatung, Energieausweis und individuelle iSFP-Empfehlungen. EEE. Diekmann - Ihr Energieberater aus Detmold.'
 
 router.get('/', (req, res) => {
