@@ -12,8 +12,8 @@ errorRouter.get('*', function(req, res){
         errorCode: errorCode,
         errorMessage: errorMessage,
         title: 'Error | EEE. Karsten Diekmann',
+        description: 'Wir entschuldigen uns! Die Seite, auf die Sie zugreifen wollten, konnte nicht gefunden werden.'
     });
 });
-
 
 export default errorRouter;
